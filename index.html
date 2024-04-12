@@ -1,0 +1,48 @@
+<body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whac-A-Mole</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="initialScreen" class="initial-screen">
+    <h2>Whac-A-Mole!</h2>
+    <p>Kill Moles to Earn Money,
+    A simple Mobile game</p>
+     <button id="startBtn">Start</button>
+<details>
+  <summary>Click to expand</summary>
+  <p>This game Whac A Mole was made by Muhammad Bin Zafar through simple front end programming HTML,CSS & Java Script on his tablet device without even using a single paid tool in order to learn and Practice coding skills as a beginner. <a href="https://www.instagram.com/muhammadbinzafar_?igsh=c3pmZHVuZGVzZXZl">Developer Instagram</a></p>
+</details>
+   
+  </div>
+
+  <div class="container" style="display: none;">
+    <h1>Whac-A-Mole</h1>
+    <p>Kill the moles to earn money!</p>
+    <div class="game-area">
+      <div class="mole"></div>
+      <div class="mole"></div>
+      <div class="mole"></div>
+      <div class="mole"></div>
+      <div class="mole"></div>
+      <div class="mole"></div>
+      <div class="mole"></div>
+      <div class="mole"></div>
+      <div class="mole"></div>
+    </div>
+    <div id="timer">Time left: <span id="timeLeft">30</span> seconds</div>
+    <p>Total Balance: $<span id="balance">0</span></p>
+    <button id="restartBtn" style="display: none;">Restart</button>
+  </div>
+  
+  <div id="gameOverScreen" class="game-over">
+    <p>Congratulations! You earned <span id="earnings">$0</span></p>
+    <button id="restartGameBtn">Restart</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
