@@ -1,0 +1,112 @@
+/* main.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #dedede;
+}
+
+.container, .game-over {
+  max-width: 320px;
+  margin: 150px auto;
+  padding: 20px;
+  background-color: #e7f5fe;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.game-area {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  justify-content: center; /* Center the grid horizontally */
+  margin-bottom: 20px;
+}
+
+.mole {
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  border: 3.25px solid #999;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.mole.active {
+  background-color: #002366; /* Green */
+}
+
+.mole.whacked {
+  background-color: #E02F2F; /* Red */
+  pointer-events: none; /* Disable pointer events for the whacked mole */
+}
+
+#timer {
+  font-size: 18px;
+}
+
+#balance {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.game-over {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.game-over p {
+  margin: 10px 0;
+}
+
+.game-over button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.game-over button:hover {
+  background-color: #0056b3;
+}
+/* initial-screen.css */
+
+.initial-screen {
+  max-width: 320px; /* Adjust as needed */
+  height:580px;
+  margin: 150px auto;
+  padding: 20px;
+  background-color:  #F3fefe; 
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: centre;
+  line-height: 18px; 
+}
+
+#startBtn {
+  background-color: #E02F2F; /* Red */
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 15px 30px;
+  font-size: 18px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#startBtn:hover {
+  background-color: #B30000; /* Darker red */
+  transform: scale(1.1); /* Increase button size on hover */
+}
+
